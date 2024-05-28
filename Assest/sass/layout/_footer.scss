@@ -1,0 +1,140 @@
+footer {
+  background-color: rgb(29, 11, 11);
+  color: rgb(194, 194, 194);
+  i {
+    color: rgb(201, 47, 47);
+  }
+  .footerFirst {
+    .container {
+      .footerUp {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0;
+        .upMain {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          max-width: 25%;
+          flex-wrap: wrap;
+          img {
+            padding-bottom: 20px;
+            max-width: 50%;
+          }
+          h5 {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            padding-bottom: 20px;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400;
+          }
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+              font-size: 14px;
+              font-weight: 600;
+              padding: 7px 0;
+              width: 50%;
+              max-width: 50%;
+              color: rgb(149, 149, 149);
+              &:hover {
+                color: rgb(201, 47, 47);
+              }
+            }
+          }
+          .footerCalendar {
+            .footerFirstText {
+              transition: 1s;
+              cursor: pointer;
+              &:hover {
+                color: rgb(201, 47, 47);
+              }
+            }
+            .footerSecondText {
+              color: rgb(99, 99, 99);
+              padding: 10px 0;
+            }
+          }
+        }
+        .upMainForth {
+          display: flex;
+          flex-direction: column;
+          h5 {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            padding-bottom: 20px;
+          }
+          ul {
+            li {
+              padding: 5px 0;
+              i {
+                padding-right: 5px;
+              }
+              .phone,
+              .mail {
+                transition: 1s;
+                &:hover {
+                  color: rgb(201, 47, 47);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footerSecond {
+      background-color: rgb(0, 0, 0);
+      padding: 20px 0;
+      .container {
+        .footerDown {
+          display: flex;
+          justify-content: space-between;
+          .downMain {
+            display: flex;
+            gap: 30px;
+            i {
+              font-size: 14px;
+              color: rgb(194, 194, 194);
+              transition: 1s;
+              cursor: pointer;
+              &:hover {
+                color: rgb(201, 47, 47);
+              }
+            }
+            a {
+              color: rgb(201, 47, 47);
+            }
+          }
+        }
+      }
+    }
+  }
+  .cevre {
+    text-align: right;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    a {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      transition: all 0.3s ease;
+      background-color: rgb(201, 47, 47);
+      font-size: 20px;
+      transition: 1s;
+      &:hover {
+        background-color: rgb(31, 31, 44);
+      }
+      i {
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
+}

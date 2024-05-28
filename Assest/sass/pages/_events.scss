@@ -1,0 +1,181 @@
+main {
+  width: 100%;
+  font-family: "Segoe UI";
+  #enter {
+    .container {
+      .transition {
+        padding-top: 30px;
+        .span {
+          color: rgb(149, 149, 149);
+        }
+      }
+    }
+  }
+  #Input {
+    .container {
+      .inputContainer {
+        form {
+          display: flex;
+          align-items: end;
+          justify-content: space-between;
+          padding-top: 70px;
+          max-width: 100%;
+          .inputs {
+            width: 25%;
+            padding: 0 15px;
+            label {
+              font-size: 18px;
+              font-weight: 600;
+            }
+            input {
+              width: 100%;
+              height: 45px;
+              padding: 0 30px;
+              border: 1px solid rgb(229, 229, 229);
+              color: rgb(149, 149, 149);
+              border-radius: 2px;
+              margin-top: 20px;
+            }
+            button {
+              width: 60%;
+              height: 45px;
+              font-size: 14px;
+              font-weight: 700;
+              background-color: #c92f2f;
+              color: #fff;
+              border-radius: 5px;
+              border: none;
+              transition: 1s;
+              &:hover {
+                background-color: #1f1f2c;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #eventspic {
+    .container {
+      h2 {
+        font-size: 36px;
+        font-weight: 600;
+        padding: 40px 0;
+      }
+      .eventsPicContainer {
+        display: flex;
+        justify-content: space-between;
+        img {
+          border-radius: 5px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          margin-bottom: 40px;
+        }
+        .eventsMainContainer {
+          padding-left: 50px;
+          padding-right: 15px;
+          display: flex;
+          align-items: center;
+          max-height: 100%;
+          height: 100%;
+          .eventsMain {
+            max-width: 70%;
+            h4 {
+              font-size: 1.5rem;
+              font-weight: 600;
+              padding-bottom: 20px;
+            }
+            .eventsIcons {
+              color: rgb(149, 149, 149);
+              margin-bottom: 15px;
+              a {
+                margin-right: 15px;
+                transition: 1s;
+                &:hover {
+                  color: rgb(201, 47, 47);
+                }
+                i {
+                  color: rgb(201, 47, 47);
+                }
+              }
+            }
+            p {
+              color: #636363;
+              font-size: 14px;
+              font-weight: 400;
+              margin-bottom: 15px;
+            }
+            a {
+              color: rgb(149, 149, 149);
+              transition: 1s;
+              &:hover {
+                color: rgb(201, 47, 47);
+              }
+            }
+          }
+          .button {
+            padding-left: 50px;
+            button {
+              max-height: 150px;
+              height: 46px;
+              padding: 0 40px;
+              font-size: 14px;
+              font-weight: 700;
+              background-color: rgb(255, 255, 255);
+              color: rgb(201, 47, 47);
+              border: none;
+              box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+              transition: 1s;
+              &:hover {
+                background-color: #c92f2f;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .pages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0;
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          li {
+            padding: 13px 18px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(235, 235, 235);
+            color: rgb(99, 99, 99);
+            font-size: 16px;
+            transition: 1s;
+            &:hover {
+              background-color: rgb(201, 47, 47);
+              color: rgb(255, 255, 255);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  #Input .container .inputContainer form {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #eventspic .container .eventsPicContainer {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 860px) {
+  #eventspic .container .eventsPicContainer .eventsMainContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  #eventspic .container .eventsPicContainer{
+    padding-bottom: 20px;
+  }
+}

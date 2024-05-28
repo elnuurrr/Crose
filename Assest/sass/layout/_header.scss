@@ -1,0 +1,66 @@
+header {
+  width: 100%;
+  font-family: "Segoe UI";
+  background-color: #f3f3f3;
+  color: rgb(149, 149, 149);
+  z-index: 1;
+  .container {
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      font-size: 14px;
+      .headerLeft {
+        display: flex;
+        gap: 30px;
+        .openHour {
+          transition: 1s;
+          cursor: pointer;
+          .clock {
+            color: rgb(201, 47, 47);
+          }
+          &:hover {
+            color: rgb(201, 47, 47);
+          }
+        }
+        .socialMedias {
+          padding: 0 20px;
+          border-left: 2px solid;
+          max-height: 20px;
+          i {
+            padding: 0 10px;
+            transition: 1s;
+            &:hover {
+              color: rgb(201, 47, 47);
+            }
+          }
+        }
+      }
+      .headerRight {
+        display: flex;
+        gap: 20px;
+        .mail {
+          transition: 1s;
+          cursor: pointer;
+          .mailIcon {
+            color: rgb(201, 47, 47);
+          }
+          &:hover {
+            color: rgb(201, 47, 47);
+          }
+        }
+        .number {
+          transition: 1s;
+          cursor: pointer;
+          .phone {
+            color: rgb(201, 47, 47);
+          }
+          &:hover {
+            color: rgb(201, 47, 47);
+          }
+        }
+      }
+    }
+  }
+}
